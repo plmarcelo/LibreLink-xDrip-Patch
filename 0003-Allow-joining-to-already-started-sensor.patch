@@ -1,0 +1,39 @@
+From a9519bab2196cd80c8cef5b3147163b744923389 Mon Sep 17 00:00:00 2001
+From: pedro lastra <pedro.lastra@veepee.com>
+Date: Tue, 1 Sep 2020 02:00:11 +0200
+Subject: [PATCH] Allow joining to already started sensor
+
+---
+ ...lowEnablingStreamingPreviouslyStartedSensorPredicate$2.smali | 2 +-
+ .../AllowJoiningPreviouslyStartedSensorPredicate$2.smali        | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/smali/com/abbottdiabetescare/flashglucose/sensorabstractionservice/AllowEnablingStreamingPreviouslyStartedSensorPredicate$2.smali b/smali/com/abbottdiabetescare/flashglucose/sensorabstractionservice/AllowEnablingStreamingPreviouslyStartedSensorPredicate$2.smali
+index 88f6ede3..01a68910 100644
+--- a/smali/com/abbottdiabetescare/flashglucose/sensorabstractionservice/AllowEnablingStreamingPreviouslyStartedSensorPredicate$2.smali
++++ b/smali/com/abbottdiabetescare/flashglucose/sensorabstractionservice/AllowEnablingStreamingPreviouslyStartedSensorPredicate$2.smali
+@@ -32,7 +32,7 @@
+ .method public shouldAllowEnablingStreaming(Ljava/lang/String;)Z
+     .locals 0
+ 
+-    const/4 p1, 0x0
++    const/4 p1, 0x1
+ 
+     return p1
+ .end method
+diff --git a/smali/com/abbottdiabetescare/flashglucose/sensorabstractionservice/AllowJoiningPreviouslyStartedSensorPredicate$2.smali b/smali/com/abbottdiabetescare/flashglucose/sensorabstractionservice/AllowJoiningPreviouslyStartedSensorPredicate$2.smali
+index 037b844d..243841fc 100644
+--- a/smali/com/abbottdiabetescare/flashglucose/sensorabstractionservice/AllowJoiningPreviouslyStartedSensorPredicate$2.smali
++++ b/smali/com/abbottdiabetescare/flashglucose/sensorabstractionservice/AllowJoiningPreviouslyStartedSensorPredicate$2.smali
+@@ -32,7 +32,7 @@
+ .method public shouldAllowJoiningSensor(Ljava/lang/String;JJ)Z
+     .locals 0
+ 
+-    const/4 p1, 0x0
++    const/4 p1, 0x1
+ 
+     return p1
+ .end method
+-- 
+2.28.0
+

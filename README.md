@@ -168,8 +168,6 @@ http://www.winmd5.com to perform md5 checksumming). The Checksum should be: `420
 6. Copy the generated `librelink.apk` to your phone (USB, google drive, ... gmail will not work) and install it.
 
 ## Finished
-**Open the app, go to "Alarms" and give all necessary permissions that the app requests, or else the first sensor you will start with the app will not transmit any data via Bluetooth!!!** As an alternative, you can navigate to the app in your android-settings -> security and enbale there all permission (Location and Files)
-
 If all Steps where succesfully executed, you will have now a patched librelink app, capable of sending its data to [xDrip](https://github.com/jamorham/xDrip-plus).
 
 Wait for more informations about which Version/Patches you need for xDrip to get the Data to Display!

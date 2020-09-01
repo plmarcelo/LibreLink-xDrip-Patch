@@ -138,6 +138,7 @@ while true ; do
             echo "${RED}Bitte mit j oder n antworten!${NORMAL}";;
     esac
 done
+patches+=" 0003-Allow-joining-to-already-started-sensor.patch"
 
 cd /tmp/librelink/
 for patch in ${patches} ; do
